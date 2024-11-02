@@ -3,52 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بنك الاختبارات</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <title>تكنولوجيا العرب</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>بنك الاختبارات</h1>
-        <button id="loginButton">تسجيل الدخول</button>
-    </header>
-
-    <main>
-        <h2>اختر المادة</h2>
-        <ul class="subject-list">
-            <li><a href="islamic.html" onclick="startQuiz('Islamic')">تربية إسلامية</a></li>
-            <li><a href="#" onclick="startQuiz('JordanHistory')">تاريخ أردني</a></li>
-            <li><a href="#" onclick="startQuiz('English')">اللغة الإنجليزية</a></li>
-            <li><a href="#" onclick="startQuiz('Arabic')">اللغة العربية</a></li>
-        </ul>
-    </main>
-
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>تسجيل الدخول</h2>
-            <input type="text" id="username" placeholder="اسم المستخدم" required>
-            <input type="password" id="password" placeholder="كلمة المرور" required>
-            <button onclick="login()">تسجيل الدخول</button>
-            <p id="loginMessage" class="message"></p>
-            <button onclick="showRegister()">إنشاء حساب جديد</button>
-        </div>
+    <div class="container">
+        <h1>اهلا وسهلا بكم </h1>
+        <p>اضغط على الزر لمعرفة خدماتنا</p>
+        <a href="get_ip.php" class="btn"> الخدمات</a>
     </div>
-
-    <div id="registerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>إنشاء حساب جديد</h2>
-            <input type="text" id="newUsername" placeholder="اسم المستخدم" required>
-            <input type="password" id="newPassword" placeholder="كلمة المرور" required>
-            <input type="password" id="confirmPassword" placeholder="تأكيد كلمة المرور" required>
-            <button onclick="register()">إنشاء الحساب</button>
-            <p id="registerMessage" class="message"></p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
