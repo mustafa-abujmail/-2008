@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تربية إسلامية - بنك الاختبارات</title>
+    <link rel="stylesheet" href="styles-islamic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>اختبارات التربية الإسلامية</h1>
+        <button onclick="goBack()">رجوع</button>
+    </header>
+
+    <main>
+        <h2>اختر الوحدة</h2>
+        <ul class="unit-list">
+            <li><a href="#" onclick="startQuiz('Islamic', 1)">الوحدة 1</a></li>
+            <li><a href="#" onclick="startQuiz('Islamic', 2)">الوحدة 2</a></li>
+            <li><a href="#" onclick="startQuiz('Islamic', 3)">الوحدة 3</a></li>
+            <li><a href="#" onclick="startQuiz('Islamic', 4)">الوحدة 4</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>© 2024 بنك الاختبارات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function startQuiz(subject, unit) {
+            alert(`بدء الاختبار لمادة ${subject} - ${unit}`);
+            // هنا يمكنك إضافة منطق لبدء الاختبار
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
